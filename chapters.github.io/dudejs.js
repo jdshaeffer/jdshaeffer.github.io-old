@@ -627,5 +627,4 @@ $(document).ready(function()
 	//$('#game-text').append("<a href="post.html">Return</a>") // href link back to home
 })
 
-$('#game-text').append("Click <a href="post.html">here</a> to return. Thank you.");
-)
+//$('#game-text').append("Click <a href="post.html">here</a> to return. Thank you.");
