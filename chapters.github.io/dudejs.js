@@ -622,8 +622,8 @@ $(document).ready(function()
 			//return;
 		}
 	})
-    if(end)
-        return;
+    //if(end)
+      //  return;
 	//$('#game-text').append("<a href="post.html">Return</a>") // href link back to home
 })
 
