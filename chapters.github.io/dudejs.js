@@ -56,8 +56,8 @@ function playerInput(input)
         }
         else if(x == "no")
         {
-            $('#game-text').append("<p>Okay. Goodbye.</p>");
-            end = true; startRoom = false;
+            $('#game-text').append("<p>Okay. Goodbye.</p><p>Come back when more games and the app are released! Thank you!</p>");
+            $('#user-input').prop('disabled', true);
         }
         else
 			$('#game-text').append("<p>I didn't understand that.</p>");
@@ -500,8 +500,8 @@ function playerInput(input)
         {
             if(white && blue && red && yellow && green)
             {
-            	$('#game-text').append("<p>You exit the maze. Well done!</p>");
-            	end = true; room17 = false;
+            	$('#game-text').append("<p>You exit the maze. Well done!</p><p>Come back when more games and the app are released! Thank you!</p>");
+                $('#user-input').prop('disabled', true);
             }
             else
             	$('#game-text').append("<p>You can't exit without all the keycards.</p>");
@@ -608,23 +608,15 @@ $(document).ready(function()
 	{
 		if(key.which == 13 && $('#user-input').is(':focus'))
 		{
-			var value = $('#user-input').val().toLowerCase();
-			$('#user-input').val("");
-			$('#game-text').append("<p>" + "<b>" + value + "</b>" + "</p>");
-			playerInput(value);
-			window.scrollTo(0,document.body.scrollHeight);
+                var value = $('#user-input').val().toLowerCase();
+                $('#user-input').val("");
+                $('#game-text').append("<p>" + "<b>" + value + "</b>" + "</p>");
+                playerInput(value);
+                window.scrollTo(0,document.body.scrollHeight); 
 		}
 		else if(end)
 		{
-			return;
-			//$('#game-text').append("<p>Congratulations. Your code is: </p>" + getRandomNum());
-			//window.scrollTo(0,document.body.scrollHeight);
-			//return;
+			//putting something in here forces it to print everytime you type a single char in
 		}
 	})
-    //if(end)
-      //  return;
-	//$('#game-text').append("<a href="post.html">Return</a>") // href link back to home
 })
-
-//$('#game-text').append("Click <a href="post.html">here</a> to return. Thank you.");
