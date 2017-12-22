@@ -7,7 +7,7 @@ var startRoom = true, room1 = false, room2 = false, room3 = false, room4 = false
 function getRandomNum(min, max)
 {
 	min = 0;
-	max = 99999999;
+	max = 9999;
     return Math.random() * (max - min) + min;
 }
 
@@ -113,7 +113,7 @@ function playerInput(input)
           	else
           		$('#game-text').append("<p>You are in Room 3. There's a white keycard here.</p>");
 		}
-		else if(x == "take keycard" || x == "take white keycard")
+		else if(x == "take keycard" || x == "take white keycard" || x == "pickup keycard" || x == "pickup white keycard" || x == "pick up keycard" || x == "pick up white keycard")
 		{
 			if(white)
 				$('#game-text').append("<p>You already have it.</p>");
@@ -297,7 +297,7 @@ function playerInput(input)
           	else
           		$('#game-text').append("<p>You are in Room 10. There's a blue keycard here.</p>");
 		}
-		else if(x == "take keycard" || x == "take blue keycard")
+		else if(x == "take keycard" || x == "take blue keycard" || x == "pickup keycard" || x == "pickup blue keycard" || x == "pick up keycard" || x == "pick up blue keycard")
 		{
 			if(blue)
 				$('#game-text').append("<p>You already have it.</p>");
@@ -382,7 +382,7 @@ function playerInput(input)
           	else
           		$('#game-text').append("<p>You are in Room 13. There's a red keycard here.</p>");
 		}
-		else if(x == "take keycard" || x == "take red keycard")
+		else if(x == "take keycard" || x == "take red keycard" || x == "pickup keycard" || x == "pickup red keycard" || x == "pick up keycard" || x == "pick up red keycard")
 		{
 			if(red)
 				$('#game-text').append("<p>You already have it.</p>");
@@ -443,7 +443,7 @@ function playerInput(input)
           	else
           		$('#game-text').append("<p>You are in Room 15. There's a yellow keycard here.</p>");
 		}
-		else if(x == "take keycard" || x == "take yellow keycard")
+		else if(x == "take keycard" || x == "take yellow keycard" || x == "pickup keycard" || x == "pickup yellow keycard" || x == "pick up keycard" || x == "pick up yellow keycard")
 		{
 			if(yellow)
 				$('#game-text').append("<p>You already have it.</p>");
@@ -551,7 +551,7 @@ function playerInput(input)
           	else
           		$('#game-text').append("<p>You are in Room 19. There's a green keycard here.</p>");
 		}
-		else if(x == "take keycard" || x == "take green keycard")
+		else if(x == "take keycard" || x == "take green keycard" || x == "pickup keycard" || x == "pickup green keycard" || x == "pick up keycard" || x == "pick up green keycard")
 		{
 			if(green)
 				$('#game-text').append("<p>You already have it.</p>");
