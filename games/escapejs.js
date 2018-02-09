@@ -155,6 +155,8 @@ function playerInput(input)
 			ate = true;
 		}
 	}
+	else if(x == "2656462" || x == "enter 2656462")
+		$('#game-text').append("<p>I see what you tried there. Not it, sorry.</p>");
 	else if(x == "examine mattress" || x == "examine bed")
 		$('#game-text').append("<p>Your run of the mill lumpy mattress. There's a big lump coming from under it.</p>");
 	else if(x == "look under mattress" || x == "lift mattress" || x == "examine under mattress" || x == "lift bed" || x == "look under bed")
@@ -170,6 +172,8 @@ function playerInput(input)
 		$('#game-text').append("<p>Nothing except some dust and old gum. Also, the number 89.5 is scribbled into one of the desk legs.</p>");
 	else if(x == "examine rubiks cube")
 		$('#game-text').append("<p>A normal rubiks cube. All the assorted colors. It's not solved yet.</p>");
+	else if(x == "examine stick figure" || x == "examine afro")
+		$('#game-text').append("<p>Such a flawless hairdo... enviable.</p>");
 	else if(x == "solve rubiks cube")
 	{
 		if(solved)
