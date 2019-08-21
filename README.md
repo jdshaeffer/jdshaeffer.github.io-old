@@ -1,7 +1,5 @@
-## Intro
-
-This is a portfolio page for J.D. Shaeffer.
-The template for this page was acquired through startbootstrap
+This is an old portfolio page that is currently not supported.
+The template for this page was acquired through startbootstrap.
 
 Their info:
 
